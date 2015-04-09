@@ -10,7 +10,9 @@ Similar notes to python-runtime, just make a `Dockerfile`:
 
  - Expects a `requirements.txt` file
  - assumes your app listens on port 8080
- - either has a `main.py` or defines `ENTRYPOINT ["/env/bin/python/", "/app/other.py"]
+ - either has a `main.py` or defines `ENTRYPOINT`:
+
+    ```ENTRYPOINT: ["/env/bin/python/", "/app/other.py"]```
 
   [1]: https://registry.hub.docker.com/u/google/python-runtime/%20google/python-runtime
 
